@@ -5,7 +5,7 @@
         <div class="box-hero" style="z-index: 100;">
             <div class="content-form">
                 <h3 class="title-form">Agendar horário</h3>
-                <form>
+                <form action="#">
                     <div class="row group-row">
                         <div class="form-group col-md-6">
                             <label for="exampleInputEmail1">Data:</label>

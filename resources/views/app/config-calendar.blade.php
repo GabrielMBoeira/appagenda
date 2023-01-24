@@ -5,7 +5,8 @@
         <div class="box-hero" style="z-index: 100;">
             <div class="content-form">
                 <h3 class="title-form">Configurações do calendário</h3>
-                <form>
+                <form action="{{ route('calendar.store') }}" method="post">
+                    @csrf
                     <div class="row group-row">
                         <div class="form-group col-md-4">
                             <label for="date-start">Perído inicial:</label>

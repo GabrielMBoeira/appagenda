@@ -9,10 +9,10 @@
 
                 <ul>
                     <li>
-                        <a href="{{ url('config-calendar') }}">Configurações do calendário</a>
+                        <a href="{{ route('calendar.create') }}">Configurações do calendário</a>
                     </li>
                     <li>
-                        <a href="{{ url('config-service') }}">Configurações do tipo de serviço</a>
+                        <a href="{{ route('service.create') }}">Configurações do tipo de serviço</a>
                     </li>
                 </ul>
 

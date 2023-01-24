@@ -5,7 +5,8 @@
         <div class="box-hero" style="z-index: 100;">
             <div class="content-form">
                 <h3 class="title-form">Cadastrar tipo de serviço</h3>
-                <form>
+                <form action="{{ route('service.store') }}" method="post">
+                    @csrf
                     <div class="row group-row">
                         <div class="form-group">
                             <label for="servicet">Descreva o tipo de serviço:</label>
