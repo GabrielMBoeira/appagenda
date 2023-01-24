@@ -40,9 +40,9 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto" href="#">Agendamentos</a></li>
+                    <li><a class="nav-link scrollto" href="{{ url('home') }}">Agendamentos</a></li>
                     <li><a class="nav-link scrollto" href="#">Clientes</a></li>
-                    <li><a class="nav-link scrollto" href="#">Configurações</a></li>
+                    <li><a class="nav-link scrollto" href="{{ url('config') }}">Configurações</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
