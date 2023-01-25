@@ -8,13 +8,13 @@ class ServiceController extends Controller
 {
     public function create() {
 
-        return view('app.config-service');
+        return view('app.services.create');
 
     }
 
-    public function store() {
+    public function store(Request $request) {
 
-        dd('aqui');
+        dd($request);
 
     }
 }

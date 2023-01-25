@@ -18,13 +18,13 @@ Route::get('/config', function () {
 });
 
 
-Route::get('/config-calendar', [CalendarController::class, 'create'])->name('calendar.create');
-Route::post('/calendar.store', [CalendarController::class, 'store'])->name('calendar.store');
+Route::get('/calendar/create', [CalendarController::class, 'create'])->name('calendar.create');
+Route::post('/calendar', [CalendarController::class, 'store'])->name('calendar.store');
 
 
-Route::get('/config-service', [ServiceController::class, 'create'])->name('service.create');
-Route::post('/service-store', [ServiceController::class, 'store'])->name('service.store');
+Route::get('/service/create', [ServiceController::class, 'create'])->name('service.create');
+Route::post('/service', [ServiceController::class, 'store'])->name('service.store');
 
 
-Route::post('/agenda', [AgendaController::class, 'index'])->name('agenda.index');
-Route::post('/create', [AgendaController::class, 'create'])->name('agenda.create');
+Route::get('/agenda', [AgendaController::class, 'index'])->name('agenda.index');
+Route::get('/create', [AgendaController::class, 'create'])->name('agenda.create');

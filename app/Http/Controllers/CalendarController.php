@@ -8,7 +8,7 @@ class CalendarController extends Controller
 {
     public function create() {
 
-        return view('app.config-calendar');
+        return view('app.calendar.create');
 
     }
 

@@ -6,7 +6,7 @@
 
             <div class="box-table">
                 <p class="d-flex justify-content-center">
-                    <a href="{{ url('create') }}" class="btn btn-sm btn-primary">Novo agendamento</a>
+                    <a href="{{ route('agenda.index') }}" class="btn btn-sm btn-primary">Novo agendamento</a>
                 </p>
                 <div class="table-responsive-md">
                     <table class="table table-hover">
