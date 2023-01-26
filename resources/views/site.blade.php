@@ -69,7 +69,11 @@
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
 
-            <a href="{{ url('home') }}" class="get-started-btn scrollto">Login</a>
+            <div>
+                <a href="{{ url('home') }}" class="get-started-btn scrollto btn-login">Login</a>
+                <a href="{{ url('register') }}" class="get-started-btn scrollto">Cadastrar</a>
+            </div>
+
 
         </div>
     </header>

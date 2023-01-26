@@ -17,7 +17,7 @@
                     <div class="row group-row">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Observação</label>
-                            <textarea name="obs-calendar" class="form-control" id="obs-calendar" cols="30" rows="10"></textarea>
+                            <textarea name="observation" class="form-control" id="observation" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                     <div class="button-form">

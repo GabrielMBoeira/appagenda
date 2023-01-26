@@ -9,6 +9,10 @@ Route::get('/', function () {
     return view('site');
 });
 
+Route::get('/register', function () {
+    return view('register');
+});
+
 Route::get('/home', function () {
     return view('app.home');
 });
@@ -18,7 +22,6 @@ Route::get('/config', function () {
 });
 
 
-Route::get('/teste', [CalendarController::class, 'teste'])->name('calendar.teste');
 Route::get('/calendar/create', [CalendarController::class, 'create'])->name('calendar.create');
 Route::post('/calendar', [CalendarController::class, 'store'])->name('calendar.store');
 
