@@ -15,4 +15,8 @@ class CalendarController extends Controller
     public function store() {
         dd('opa');
     }
+
+    public function teste() {
+        return view('teste');
+    }
 }
