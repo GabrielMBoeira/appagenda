@@ -13,6 +13,10 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/termo-aceite', function () {
+    return view('termo-aceite');
+});
+
 Route::get('/home', function () {
     return view('app.home');
 });
