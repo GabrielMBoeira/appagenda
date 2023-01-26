@@ -18,3 +18,4 @@ yarn-error.log
 /.vscode
 /docker
 /.docker
+/.docker/mysql/dbdata/ibdata1
