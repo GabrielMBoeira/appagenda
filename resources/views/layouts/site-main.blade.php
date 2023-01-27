@@ -71,7 +71,7 @@
 
             <div>
                 <a href="{{ url('home') }}" class="get-started-btn scrollto btn-login">Login</a>
-                <a href="{{ url('register') }}" class="get-started-btn scrollto">Cadastrar</a>
+                <a href="{{ route('establishment.create') }}" class="get-started-btn scrollto">Cadastrar</a>
             </div>
 
 

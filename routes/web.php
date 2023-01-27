@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\EstablishmentController;
 
 Route::get('/', function () {
     return view('site');
@@ -24,6 +25,10 @@ Route::get('/home', function () {
 Route::get('/config', function () {
     return view('app.config');
 });
+
+
+Route::get('/establishment/create', [EstablishmentController::class, 'create'])->name('establishment.create');
+Route::post('/establishment', [EstablishmentController::class, 'store'])->name('establishment.store');
 
 
 Route::get('/calendar/create', [CalendarController::class, 'create'])->name('calendar.create');
