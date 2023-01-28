@@ -22,9 +22,10 @@ class EstablishmentController extends Controller
         $establishment->address = $request->address;
         $establishment->city = $request->city;
         $establishment->state = $request->state;
-        $establishment->password = $request->password;
-
+        $establishment->password = bcrypt($request->password);
         $establishment->save();
+
+        return redirect()->route('establishment.create')->with('msg', 'Estabelecimento salvo com sucesso!');
 
     }
 }
