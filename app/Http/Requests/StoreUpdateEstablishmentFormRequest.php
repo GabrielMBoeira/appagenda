@@ -23,14 +23,53 @@ class StoreUpdateEstablishmentFormRequest extends FormRequest
      */
     public function rules()
     {
+
         return [
-            'name' => [
-                'required',
-            ],
             'email' => [
+                'required',
                 'email',
+                'string',
                 'unique:establishments'
+            ],
+            'phone' => [
+                'required'
+            ],
+            'name' => [
+                'required'
+            ],
+            'address' => [
+                'required'
+            ],
+            'city' => [
+                'required'
+            ],
+            'state' => [
+                'required'
+            ],
+            'password' => [
+                'required',
+                'min:6',
+                'max:15'
+            ],
+            'confirm-password' => [
+                'required',
+                'min:6',
+                'max:15'
+            ],
+            'grid-check' => [
+                'required'
             ]
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'required' => "Este campo é obrigatório.",
+            'email' => "Deve ser um e-mail válido.",
+            'unique' => "Este registro já encontra-se cadastrado.",
+            'min' => "Campo deve ter o mínimo de :min caracteres.",
+            'max' => "Campo deve ter o máximo de :max caracteres."
         ];
     }
 }

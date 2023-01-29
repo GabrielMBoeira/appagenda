@@ -9,6 +9,9 @@
 
                 <ul>
                     <li>
+                        <a href="{{ route('establishment.create') }}">Configurações de cadastro</a>
+                    </li>
+                    <li>
                         <a href="{{ route('calendar.create') }}">Configurações do calendário</a>
                     </li>
                     <li>
