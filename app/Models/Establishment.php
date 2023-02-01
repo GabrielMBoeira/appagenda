@@ -11,5 +11,4 @@ class Establishment extends Model
 
     protected $table = 'establishments';
 
-
 }
