@@ -71,7 +71,7 @@ class StoreUpdateEstablishmentFormRequest extends FormRequest
             'unique' => "Este registro já encontra-se cadastrado.",
             'min' => "Campo deve ter o mínimo de :min caracteres.",
             'max' => "Campo deve ter o máximo de :max caracteres.",
-            'same' => "Senhas não é igual a senha cadastrada!"
+            'same' => "Senha confirmada não é igual a senha cadastrada!"
         ];
     }
 }

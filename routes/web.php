@@ -18,9 +18,9 @@ Route::get('/termo-aceite', function () {
     return view('termo-aceite');
 });
 
-Route::get('/home', function () {
-    return view('app.home');
-});
+// Route::get('/home', function () {
+//     return view('app.home');
+// });
 
 Route::get('/login', function () {
     return view('app.login');

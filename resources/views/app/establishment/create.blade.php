@@ -1,4 +1,6 @@
-@extends('app.layouts.header-site')
+{{-- @extends('app.layouts.header-site') --}}
+
+@extends('app.layouts.site-main')
 
 @section('content')
     <section id="hero" class="d-flex justify-content-center">

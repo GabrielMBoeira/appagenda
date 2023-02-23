@@ -9,7 +9,7 @@ class AgendaController extends Controller
     public function index()
     {
 
-        return view('app.agenda.create');
+        return view('app.agenda.index');
     }
 
     public function create()
