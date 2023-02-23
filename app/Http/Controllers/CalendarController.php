@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Calendar;
 use Illuminate\Http\Request;
 
 class CalendarController extends Controller
@@ -12,8 +13,10 @@ class CalendarController extends Controller
 
     }
 
-    public function store() {
-        dd('opa');
+    public function store(Request $request) {
+
+        $calendar = new Calendar();
+
     }
 
     public function teste() {

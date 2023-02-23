@@ -9,12 +9,12 @@
                     @csrf
                     <div class="row group-row">
                         <div class="form-group col-md-4">
-                            <label for="date-start">Perído inicial:</label>
-                            <input type="date" class="form-control" name="date-start" id="date-start">
+                            <label for="date-start">Data:</label>
+                            <input type="date" class="form-control" name="date-start" >
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="date-end">Perído final:</label>
-                            <input type="date" class="form-control" name="date-end" id="date-end">
+                            <label for="hour-start">Horário:</label>
+                            <input type='time' class="form-control" name="hour-start" id="hour-start">
                         </div>
                     </div>
                     <div class="row group-row">

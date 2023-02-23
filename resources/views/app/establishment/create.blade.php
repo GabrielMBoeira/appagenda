@@ -1,5 +1,4 @@
-@extends('app.layouts.main')
-
+@extends('app.layouts.header-site')
 
 @section('content')
     <section id="hero" class="d-flex justify-content-center">
@@ -10,26 +9,19 @@
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                        <div class="modal-content message-box">
+                            <div class="modal-body message-body">
+                                {{ session('msg') }}
                             </div>
-                            <div class="modal-body">
-                            ...
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <div class="modal-footer d-flex justify-content-center align-iten">
+                            <button type="button" class="btn btn-primary" onclick="closeModal()">OK</button>
                             </div>
                         </div>
                         </div>
                     </div>
                 @endif
 
-                <h3 class="title-form">Cadastro de estabelecimento</h3>
+                <h3 class="title-form">Cadastrar estabelecimento</h3>
                 <form action="{{ route('establishment.store') }}" method="post">
                     @method('POST')
                     @csrf
@@ -105,9 +97,9 @@
                             <small class="text-danger"> @error('password') {{ $message }} @enderror </small>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="confirm-password">Confirme sua senha:</label>
-                            <input type="password" class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirme sua senha">
-                            <small class="text-danger"> @error('confirm-password') {{ $message }} @enderror </small>
+                            <label for="confirm_password">Confirme sua senha:</label>
+                            <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirme sua senha">
+                            <small class="text-danger"> @error('confirm_password') {{ $message }} @enderror </small>
                         </div>
                     </div>
                     <div class="form-group group-row">
@@ -129,8 +121,8 @@
 
 {{-- Script Modal --}}
 <script>
+
     window.onload = function() {
-        // $('#exampleModalCenter').modal('show');
         $('#exampleModalCenter').appendTo("body").modal('show');
     }
 

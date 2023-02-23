@@ -48,13 +48,14 @@ class StoreUpdateEstablishmentFormRequest extends FormRequest
             ],
             'password' => [
                 'required',
-                'min:6',
+                'min:1',
                 'max:15'
             ],
-            'confirm-password' => [
+            'confirm_password' => [
                 'required',
-                'min:6',
-                'max:15'
+                'min:1',
+                'max:15',
+                'same:password'
             ],
             'grid-check' => [
                 'required'
@@ -69,7 +70,8 @@ class StoreUpdateEstablishmentFormRequest extends FormRequest
             'email' => "Deve ser um e-mail válido.",
             'unique' => "Este registro já encontra-se cadastrado.",
             'min' => "Campo deve ter o mínimo de :min caracteres.",
-            'max' => "Campo deve ter o máximo de :max caracteres."
+            'max' => "Campo deve ter o máximo de :max caracteres.",
+            'same' => "Senhas não é igual a senha cadastrada!"
         ];
     }
 }
